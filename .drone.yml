@@ -1,0 +1,9 @@
+kind: pipeline
+type: docker
+name: default
+
+steps:
+  - name: greet
+    image: node:alpine
+    commands:
+      - echo Hello World!
