@@ -1,9 +1,29 @@
+---
 kind: pipeline
 type: docker
-name: default
+name: test-on-amd64
+
+platform:
+  arch: amd64
 
 steps:
-  - name: greet
+  - name: install and test
     image: node:alpine
     commands:
-      - echo Hello World!
+      - npm ci
+      - npm test
+
+---
+kind: pipeline
+type: docker
+name: test-on-arm64
+
+platform:
+  arch: arm64
+
+steps:
+  - name: install and test
+    image: node:alpine
+    commands:
+      - npm ci
+      - npm test
