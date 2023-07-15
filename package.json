@@ -1,0 +1,15 @@
+{
+  "name": "binary-choice",
+  "version": "1.0.0",
+  "description": "Express website to prompt users for binary choices",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ."
+  },
+  "author": "Jystro",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
