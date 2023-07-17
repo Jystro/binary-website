@@ -1,7 +1,7 @@
 {
   "name": "binary-choice",
   "version": "1.0.0",
-  "description": "Express website to prompt users for binary choices",
+  "description": "Express website to prompt users for binary choices from an SQL database",
   "main": "server.js",
   "scripts": {
     "test": "jest",

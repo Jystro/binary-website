@@ -7,7 +7,7 @@ platform:
   arch: amd64
 
 steps:
-  - name: install and test
+  - name: test
     image: node:alpine
     commands:
       - npm ci
@@ -22,7 +22,7 @@ platform:
   arch: arm64
 
 steps:
-  - name: install and test
+  - name: test
     image: node:alpine
     commands:
       - npm ci
